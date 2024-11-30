@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css"  href="estilos.css" >
+<body>
+
+    
+    
+    <p>
+    <a href="index.html">Volver al inicio</a>
+    </p>
+    
+
+    <form action="form.php" method="get">
+
+        <fieldset>
+            
+            <legend>Datos personales</legend>
+            <p>
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" name="name">
+            </p>
+            <p>
+                <label for="ap">Apellidos: </label>
+                <input type="text" id="ap" name="ap">
+            </p>
+            <p>
+                <label for="ed">Edad/Fecha de nacimiento</label>
+                <input type="date" name="ed" id="date">
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <input type="text" maxlength="9" required>
+            </p>
+            <p>
+                <label for="con">Acepto las siguinetes condiciones:</label>
+                `<p>
+                <input type="radio" name="con" id="con" checked>Deseo recibir notificaciones del torneo
+                <p>
+                <input type="radio" name="con" id="con">Deseo ser socio de la organización que organiza este torneo
+            </p>
+
+        </fieldset>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Reiniciar">
+    </form>
+    
+    
+
+
+</body>
+</html>
